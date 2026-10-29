@@ -1,0 +1,51 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.catalog {
+  display: flex;
+  gap: 20px;
+}
+
+.catalog .card {
+  background-color: #f8f9fa;
+  padding: 16px;
+  border-radius: 8px;
+  flex: 1;
+  border: 1px solid #ddd;
+  transition: transform 0.2s;
+}
+
+.catalog .card:hover {
+  transform: translateY(-5px);
+}
+
+.catalog .card h3 {
+  margin-top: 0;
+}
+
+.catalog .card .price {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.catalog .card .btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.catalog .card .btn:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+  .catalog {
+    flex-direction: column;
+  }
+}
